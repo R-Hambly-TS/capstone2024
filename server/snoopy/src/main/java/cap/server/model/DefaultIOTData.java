@@ -1,4 +1,4 @@
-package cap.snoopy;
+package cap.server.model;
 
 import java.util.Objects;
 import java.time.LocalDateTime;
