@@ -14,6 +14,7 @@ public class DefaultIOTData {
 	
 	// ID of transmitting device
 	private String deviceID;
+	private String deviceType;
 	private String data;
 	private LocalDateTime transmissionTime;
 
@@ -21,8 +22,9 @@ public class DefaultIOTData {
 	public DefaultIOTData() {}
 
 	// Constructor with basic parameters
-	public DefaultIOTData(String deviceid, String data){
+	public DefaultIOTData(String deviceid,String devicetype, String data){
 		this.deviceID = deviceid;
+		this.deviceType = devicetype;
 		this.data = data;
 	}
 	
@@ -34,6 +36,10 @@ public class DefaultIOTData {
 	
 	public String getDeviceID() {
 		return this.deviceID;
+	}
+	
+	public String getDeviceType() {
+		return this.deviceType;
 	}
 	
 	public String getData() {
@@ -52,6 +58,10 @@ public class DefaultIOTData {
 	
 	public void setDeviceID(String devID) {
 		this.deviceID = devID;
+	}
+	
+	public void setDeviceType(String devtype) {
+		this.deviceType = devtype;
 	}
 	
 	public void setData(String data) {
@@ -78,7 +88,7 @@ public class DefaultIOTData {
 	}
 	
 	@Override public String toString() {
-		return "Data{" + "deviceID=" + this.deviceID + ", data='" + this.data + "\'" + "}";
+		return "Data{" + "deviceID=" + this.deviceID + ", deviceType=" + this.deviceType + ", data='" + this.data + "\'" + "}";
 	}
 
 }
