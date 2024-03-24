@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.hateoas.CollectionModel;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -17,14 +18,19 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import cap.server.model.DefaultIOTData;
+import cap.server.DataRepository;
+
 // tag::hateoas-imports[]
 // end::hateoas-imports[]
+
 
 @RestController
 @RequestMapping("/entries")
 public class DataController {
 
-	private final DataRepository repository;
+	@Autowired
+	private DataRepository repository;
 	
 	private final EntryModelAssembler assembler;
 	

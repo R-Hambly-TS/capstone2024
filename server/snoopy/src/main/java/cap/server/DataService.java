@@ -1,7 +1,9 @@
-package cap.snoopy;
+package cap.server;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import cap.server.model.DefaultIOTData;
 
 @Service
 public class DataService {
