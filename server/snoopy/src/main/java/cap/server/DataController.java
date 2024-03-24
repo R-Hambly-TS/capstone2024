@@ -1,4 +1,4 @@
-package cap.snoopy;
+package cap.server;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
