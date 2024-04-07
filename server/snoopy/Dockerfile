@@ -1,6 +1,3 @@
-# syntax=docker/dockerfile:1
-
-
 FROM eclipse-temurin:17-jdk-jammy as deps
 
 WORKDIR /build
@@ -29,16 +26,6 @@ RUN java -Djarmode=layertools -jar target/app.jar extract --destination target/e
 
 FROM eclipse-temurin:17-jre-jammy AS final
 
-ARG UID=10001
-RUN adduser \
-    --disabled-password \
-    --gecos "" \
-    --home "/nonexistent" \
-    --shell "/sbin/nologin" \
-    --no-create-home \
-    --uid "${UID}" \
-    appuser
-USER appuser
 
 COPY --from=extract build/target/extracted/dependencies/ ./
 COPY --from=extract build/target/extracted/spring-boot-loader/ ./
