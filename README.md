@@ -57,11 +57,11 @@ Steps:
    ```
 3. Pull the image from Docker Hub.
    ```
-   docker pull rhamblyts/my-image:latest
+   docker pull rhamblyts/peanuts:latest
    ```
 4. Run the downloaded Docker image.
    ```
-   docker run --name peanuts -p 8088:80 -d rhamblyts/my-image:latest
+   docker run --name peanuts -p 8088:80 -d rhamblyts/peanuts:latest
    ```
 5. In the Docker Desktop App, navigate to the Containers tab and open the app by clicking on the link found in the Port(s) column.
 6. View the data entries and those flagged as abnormal in red on the webpage.
