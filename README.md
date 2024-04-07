@@ -67,3 +67,7 @@ Steps:
 6. View the data entries and those flagged as abnormal in red on the webpage.
 > [!NOTE]
 > You may need to refresh the page a couple of times before the Docker container connects properly.
+> To access the H2 Console, you may need to change the datasource url line to read:
+> ```
+> jdbc:h2:mem:mydb
+> ```
