@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset = "utf-8"/>
+		<link rel = "stylesheet" href = "styles.css" class="center"/>
+		<link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<title> Peanuts </title>
+	</head>
+	<body>
+		<header>
+			<div class="navbar">
+				<a class="active" href="/"><i class="fa fa-fw fa-home"></i> Home</a> 
+				<a href="/contact"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+				<a href="/about"><i class="fa fa-fw fa-user"></i> About</a>
+			</div>
+		</header>
+		
+		<section>
+			<h2>About</h2>
+			<p>
+				This web page was developed for my Capstone Project for the Winter 2024 Semester. <br>
+				This project represents a simulated distributed system for IoT devices. <br>
+				The web page displays a table of 250 entries, once the entries reach the server, <br>
+				they then get checked to see if they are abnormal or not. If they are abnormal <br>
+				the will be flagged as such and then displayed in red on the web page table. <br>
+			</p>
+			<hr>
+			<p>
+				The application was built using Java Spring Boot on an Apache Tomcat Servlet. <br>
+				The web design was created using the Thymeleaf Template Engine and a mix of <br>
+				the following technologies:
+			</p>
+			<ul>
+				<li>HTML</li>
+				<li>Pure CSS</li>
+				<li>Font Awesome CSS</li>
+				<li>Bootstrap CSS</li>
+			</ul>
+			<hr>
+			<h4>Planned Updates</h4>
+			<p>
+				Some planned updates for the Peanuts application are:
+			</p>
+			<ol>
+				<li>CRUD Buttons with functionality for data entries</li>
+				<li>A search bar and functional filter</li>
+				<li>A form that allows for the creation of new device types</li>
+				<li>The ability to refresh or click a button that generates new data</li>
+			</ol>
+			
+		</section>
+		
+		<footer>
+			<p th:class="light-text">Capstone Project by Rafe Hambly &copy 2024</p>
+		</footer>
+
+		
+	</body>
+</html>
