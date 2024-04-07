@@ -20,8 +20,9 @@ This project was built with assistance from the following resources:
 > The following sections provide a detailed overview of how to run this project.
 > There are two options for running this project:
 > 1. Running the PEANUTS-0.2.jar file located in the server>snoopy>target folder via Terminal and accessing via localhost in a browser.
-> 2. Running the application via a Docker image that can be pulled from Docker Hub.
-> This file walks through both options.
+> 2. Running the application via a Docker image that can be pulled from Docker Hub. (recommended)
+>
+>This file walks through both options.
 
 ## Option #1: Running via .jar file.
 > [!WARNING]
