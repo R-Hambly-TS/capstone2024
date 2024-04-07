@@ -25,22 +25,24 @@ This project was built with assistance from the following resources:
 
 ## Option #1: Running via .jar file.
 > [!WARNING]
-> This tutorial assumes that you are using a macOS or linux terminal.
+> This tutorial assumes that you are using a macOS or linux terminal and have an IDE capable of building Maven projects.
 Steps:
 1. Download the .zip folder from this GitHub page and unzip the folder.
 2. Open your Terminal.
 3. cd into the directory where you downloaded the .zip file.
 4. cd into the project's server folder.
 5. cd into the snoopy folder.
-6. cd into the target folder.
-7. Once in the target folder run the following command:
+6. Open the project in an IDE like Eclipse.
+7. Once in Eclipse, run build clean and then run build install.
+8. After the build has completed, cd into the target folder.
+9. Once in the target folder run the following command:
    ```
    java -jar PEANUTS-0.2.jar
    ```
-8. Open a browser and navigate to localhost:8088
-9. View the data entries and those flagged as abnormal in red on the webpage.
+10. Open a browser and navigate to localhost:8088
+11. View the data entries and those flagged as abnormal in red on the webpage.
 
-## Option #2: Running via Docker.
+## Option #2: Running via Docker. (recommended)
 > [!WARNING]
 > You must have a Docker Hub account in order to run this Docker image.
 Steps:
