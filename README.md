@@ -27,6 +27,7 @@ This project was built with assistance from the following resources:
 ## Option #1: Running via .jar file.
 > [!WARNING]
 > This tutorial assumes that you are using a macOS or linux terminal and have an IDE capable of building Maven projects.
+
 Steps:
 1. Download the .zip folder from this GitHub page and unzip the folder.
 2. Open your Terminal.
@@ -46,6 +47,7 @@ Steps:
 ## Option #2: Running via Docker. (recommended)
 > [!WARNING]
 > You must have a Docker Hub account in order to run this Docker image.
+
 Steps:
 1. Open the Docker Desktop App.
 2. Verify Docker version and login to Docker Hub.
